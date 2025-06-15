@@ -1,0 +1,54 @@
+@import "../../styles/config.scss";
+
+// MOBILE FIRST
+.home {
+  min-height: 100vh;
+  min-width: 100vw;
+  box-sizing: border-box;
+
+  @include desktop {
+    min-width: 0;
+    margin: 0 auto;
+  }
+
+  h1{
+    padding: $padding-medium
+  }
+
+  .who{
+    background-color: #ff9e00;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+
+      @include desktop{
+        width: 1300px;
+        margin: 0 auto;
+      }
+      @include flex-column-gap($container-gap);
+      }
+      .intro-article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .sectiondiscover{
+  
+        .how-it-works{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+  
+          .search-div{
+  
+          }
+        }
+  
+      }
+  }
+  
+}

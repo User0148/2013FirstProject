@@ -1,0 +1,67 @@
+@import "../../styles/config.scss";
+.posts{
+    margin-bottom: 10rem;
+    
+    h2{
+        padding: 1rem;
+        text-align: center;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-large;
+        padding: $padding-medium;
+        border-radius: $border-radius-primary;
+        color: $text-color-black;
+        align-items: center;
+        word-wrap: break-word;
+        background-color: #DBF1FD ;
+        @include desktop{
+            border-radius: $border-radius-primary;
+        }
+    
+        @include desktop{
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: unset;
+        }
+    
+        .postcontent {
+            display: flex;
+            flex-direction: column;
+            border-radius: $border-radius-primary;
+            align-items: center;
+            padding: $padding-small;
+            gap: $spacing-medium;
+            background-color: $bg-color-white;
+    
+            @include desktop{
+                width: 150px;
+                height: 300px;
+            }
+
+            
+            
+            .inconeclub {
+                width: 150px;
+                height: 100px;
+                border-radius: 2px;
+            }
+    
+            .clubinfo {
+                font-size: 13px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: $spacing-small;
+                align-items: center   ;
+            }
+        }
+    
+        .postcontent:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+}
+

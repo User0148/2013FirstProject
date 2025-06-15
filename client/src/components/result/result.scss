@@ -1,0 +1,46 @@
+    @import "../../styles/config.scss";
+
+.result{
+    @include flex-column-gap($container-gap);
+    margin-bottom: $spacing-medium;
+
+    @include tablet{
+        width: 100%;
+        align-items: center;
+    }
+    @include desktop{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .result-info{
+        border: 2px solid $border-color-primary;
+        border-radius: $border-radius-primary;
+        display: flex;
+        align-items: center;
+        padding: $padding-small;
+
+        @include tablet{
+            width: 50%;
+        }
+        @include desktop{
+            width: 33%;
+        }
+
+        .info-left{
+            img{     
+            width: 150px;
+            height: 100%;
+            border-radius: 2px;
+            }
+        }
+
+        .info-right{
+
+        }
+
+    }
+}

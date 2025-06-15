@@ -1,0 +1,97 @@
+@import "../../styles/config.scss";
+
+.register-club {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: $padding-large;
+
+  .container {
+    @include flex-column-gap(0);
+    justify-content: flex-start;
+    align-items: center;
+
+    .error{
+      color: red;
+    }
+
+    h2 {
+      margin: 1.5rem 0 1.5rem 0;
+    }
+
+    span {
+      margin: 1.5rem 0 1.5rem 0;
+    }
+
+    .message {
+      font-size: small;
+      margin: -1.5rem 0 1.5rem 0;
+      padding: $padding-large;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+
+      input {
+        
+        margin-bottom: 3rem;
+        outline: 0;
+        border-width: 0 0 2px;
+        border-color: $border-color-primary;
+        font-size: 1.2rem;
+        padding: 0.3rem;
+      }
+      input:focus{
+        border: 2px solid $border-color-primary;
+        border-radius: $border-radius-primary;
+      }
+      ul{
+        margin-top: -40px;
+        margin-bottom: 50px;
+        list-style: none;
+        border: $border-color-primary solid 2px ;
+        border-radius: 5px;
+        padding: 5px;
+        li:hover{
+        background-color: aqua;
+        cursor: pointer;
+        }
+      }
+      textarea {
+        margin-bottom: 2rem;
+      }
+
+      textarea:focus{
+        border: 3px solid $border-color-primary;
+        border-radius: $border-radius-primary;
+      }
+
+      .button {
+        display: flex;
+        justify-content: center;
+
+        button {
+          width: 150px;
+          height: 2.5rem;
+          color: $text-color-white;
+          background-color: $bg-color-primary;
+          border-radius: 12px;
+          margin-right: $spacing-medium;
+          cursor: pointer;
+
+        }
+
+        button:last-child {
+            margin-right: 0;
+          }
+          
+          button:hover{
+            background-color: rgba($bg-color-primary, 0.638);
+          }
+      }
+    }
+  }
+}

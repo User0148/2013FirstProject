@@ -1,0 +1,80 @@
+// Variables
+$bc-color-white: #ffffff;
+$bc-color-blue: #0c0cd2;
+$bc-color-darkblue: #170647;
+$c-white: #ffffff;
+$c-black: #000000;
+
+// Background Colors
+$bg-color-white: #ffffff;
+$bg-color-primary: #0037c0;
+$bg-color-secondary: #1E3263;
+
+// Text Colors
+$text-color-white: #ffffff;
+$text-color-black: #000000;
+
+// Border Colors
+$border-color-white: #ffffff;
+$border-color-black: #000000;
+$border-color-primary: #0037c0;
+$border-color-secondary : #1E3263;
+
+
+// Border Radius
+$border-radius-primary: 5px;
+
+
+// Button
+$button-text-color: white;
+$button-text-transform: uppercase;
+$button-padding: 1rem;
+$button-border-radius: 5px;
+
+//container gap
+$container-gap-smmal: 1rem;
+$container-gap: 2rem;
+
+//container width desktop
+$container-width-desktop: 60%;
+
+// Line Heights
+$line-height-small: 1.4;
+$line-height-medium: 1.6;
+$line-height-large: 1.8;
+
+// Spacing in rem units
+$spacing-small: 0.5rem;    // 8px / 16px = 0.5rem
+$spacing-medium: 1rem;     // 16px / 16px = 1rem
+$spacing-large: 1.5rem;    // 24px / 16px = 1.5rem
+
+// Padding in rem units
+$padding-small: 0.5rem;    // 8px / 16px = 0.5rem
+$padding-medium: 1rem;     // 16px / 16px = 1rem
+$padding-large: 1.5rem;    // 24px / 16px = 1.5rem
+
+
+// mixin styles
+@mixin tablet {
+    @media (min-width: 640px){
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media (min-width: 1024px){
+      @content;
+    }
+  }
+
+  @mixin flex-column-gap($gap) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+  }
+
+  @mixin flex-row-gap($gap) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+  }

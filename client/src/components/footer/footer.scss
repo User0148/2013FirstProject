@@ -1,0 +1,23 @@
+@import "../../styles/config.scss";
+.footer{
+    background-color: $bg-color-primary;
+    color: $c-white;
+    padding: $padding-medium;
+    /* position:absolute; */
+    /* bottom: 0; */
+    min-width: 100%;
+    margin-top: auto;
+   .content{
+
+    .nav-link{
+        text-align: center;
+        margin-bottom: $spacing-large;
+    }
+    .twitter{
+        text-align: center;
+    }
+    .twitter:focus{
+        cursor: pointer;
+    }
+   }
+}

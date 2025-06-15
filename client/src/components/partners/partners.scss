@@ -1,0 +1,58 @@
+.partners {
+    overflow: hidden;
+    /* white-space: nowrap;
+      user-select: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  
+    .partnersCardContainer {
+      display: flex;
+      width: 1200px;
+      overflow: hidden;
+      user-select: none;
+  
+      .partnersAnimation {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        white-space: nowrap;
+        width: 100%;
+        animation: scrollPartners 15s linear infinite;
+        @media only screen and (max-width: 768px) { 
+          animation: scrollPartners 15s linear infinite;
+      }
+        
+  
+        .partnersCard{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+  
+          .partnersIcon {
+              width: 150px;
+              height: 120px;
+              color: white;
+            }
+  
+        }
+  
+        
+      }
+    }
+  }
+  
+  @keyframes scrollPartners {
+    from {
+      left: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  

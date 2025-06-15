@@ -1,0 +1,74 @@
+@import "../../styles/config.scss";
+
+.profile{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+
+
+    @include desktop {
+        min-width: 0;
+        width: $container-width-desktop;
+        margin: 0 auto;
+    }
+    
+
+    
+
+    .club-list{
+        @include flex-column-gap(1.5rem);
+
+        .club-info{
+            border: solid 2px black ;
+            border-radius: 5px;
+            padding: 1rem;
+            word-break: break-word;
+
+            @include tablet{
+                width: 60%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            @include desktop{
+                width: 55%;
+            }
+
+            .top{
+
+                .top-left{
+                    h3{
+                        text-align: center;
+                    }
+
+                }
+            }
+
+            .button{
+                display: flex;
+                justify-content: space-evenly   ;
+                .deletebtn, .updatebtn{
+                    width: 150px;
+                    height: 2.5rem;
+                    color: $text-color-white;
+                    background-color: $bg-color-primary;
+                    border-radius: 12px;
+                    margin-right: $spacing-medium;
+                }
+
+                button:hover{
+                    cursor: pointer;
+                }
+            }
+            
+        }
+
+        .club-info div p{
+            margin-bottom: $spacing-small;
+        }
+    }
+
+
+
+}

@@ -1,0 +1,70 @@
+@import "../../styles/config.scss";
+//MOBILE FIRST
+.search {
+  @include flex-column-gap($container-gap);
+  justify-content: flex-start;
+  align-items: center;
+  padding: $padding-large;
+  min-height: 100vh;
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $spacing-large;
+    form {
+      @include flex-column-gap($container-gap);
+
+      label {
+      }
+      input {
+        outline: 0;
+        border-width: 0 0 2px;
+        border-color: $bg-color-primary;
+        font-size: 1.2rem;
+        padding: 0.3rem;
+      }
+
+      input:focus{
+        border: 2px solid $border-color-primary;
+        border-radius: $border-radius-primary;
+      }
+
+      ul{
+        list-style: none;
+        border: 2px solid $border-color-primary;
+        border-radius: $border-radius-primary;
+        margin-top: -20px;
+        li:hover{
+          background-color: aqua;
+          cursor: pointer;
+          padding: 5px;
+        }
+      }
+
+      button {
+        color: $text-color-white;
+        background-color: $bg-color-primary;
+        padding: 0.5rem;
+        border-radius: $border-radius-primary;
+        width: 150px;
+        margin: auto;
+        
+        @include desktop{
+          cursor: pointer;
+        }
+      }
+
+      button:hover{
+        background-color: rgba($bg-color-primary, 0.638);
+      }
+    }
+  }
+}
+
+
+@include desktop {
+  .search{
+
+  }
+}

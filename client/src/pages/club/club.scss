@@ -1,0 +1,126 @@
+@import "../../styles/config.scss";
+
+.club{
+    
+    article{
+        padding: 2rem;
+        @include flex-column-gap($container-gap);
+        background-color: #DBF1FD;
+        margin: 5rem 0;
+        
+        @media screen and (min-width: 1024px) {
+        width: 1024px;
+        padding: 2rem ;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: $border-radius-primary;
+        }
+
+
+
+        .top{   
+            background-color: #fbfbfb;
+            min-height: 10rem;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+    
+        .description{
+            background-color: #fbfbfb;
+            min-height: 10rem;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .effectif{
+            text-align: center;
+            background-color: #fbfbfb;
+            min-height: 15rem;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .effectif :first-child{
+            text-align: left;
+        }
+        .effectif svg{
+            font-size: 5rem;
+            text-align  : center;
+        }
+
+        .effectif p:last-child {
+            text-align: center;
+        }
+
+        .contact{
+            background-color: #fbfbfb;
+            height: 10rem;
+            padding: 1rem;
+            border-radius: 5px;
+
+            .icon{
+                text-align: center;
+                margin: 15px;
+                font-size: 2rem;
+            }
+            .icon svg:first-child{
+                margin-right: 2rem;
+            }
+        }
+
+        .deletebtn{
+            display: flex;
+            margin: 55px auto;
+        }
+        
+
+    }
+
+    .deletebtn{
+            color: $button-text-color;
+            text-transform: $button-text-transform;
+            padding: $button-padding;
+            background-color: $bg-color-primary;
+            border: 1px solid $border-color-white;
+            border-radius: $button-border-radius;
+    }
+    .deletebtn:hover{
+        cursor: pointer;
+        background-color: rgba($bg-color-primary, 0.638);
+    }
+
+    .popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $bg-color-secondary;
+    color: $text-color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $container-gap;
+    z-index: 999;
+
+    .closebtn{
+        background-color: $bg-color-white;
+        padding: $padding-small;
+        border-radius: $border-radius-primary;
+
+        @include desktop{
+            cursor: pointer;    
+        }
+    }
+
+
+    @include desktop{
+        width: 800px;
+        height: 25%;
+        top: 25%;
+        left: 30%;
+    }
+    }
+
+    
+}

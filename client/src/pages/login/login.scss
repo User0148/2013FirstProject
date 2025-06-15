@@ -1,0 +1,90 @@
+@import "../../styles/config.scss";
+
+//MOBILE FIRST
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+
+  img{
+    width: 150px;
+    height: 120px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    box-shadow: 0px 10px 23px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 2rem;
+
+    .top {
+      h2 {
+        text-align: center;
+        margin-bottom: 5rem;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+
+        .form-group{
+          display: flex;
+          flex-direction: column;
+            
+            input {
+              outline: 0;
+              border-width: 0.5px;
+              border-radius: 5px;
+              border-color: lightgray;
+              font-size: 1.2rem;
+              padding: 0.3rem;
+            }
+            input:focus{
+              border-color: $bc-color-blue;
+            }
+        }
+        
+        .button {
+          padding: 0.5rem;
+          border: none;
+          border-radius: 2px;
+          background-color: $bc-color-blue;
+          color: $c-white;
+        }
+        .button:hover{
+          cursor: pointer;
+          background-color: rgb(13, 13, 14);
+        }
+        
+      }
+    }
+
+    .bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      span {
+        font-size: 0.8rem;
+      }
+      .button {
+        padding: 0.5rem;
+          border: none;
+          border-radius: 2px;
+          background-color: $bc-color-blue;
+          color: $c-white;
+      }
+
+      .button:hover{
+        cursor: pointer;
+      }
+    }
+    
+  }
+}

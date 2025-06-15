@@ -1,0 +1,67 @@
+.introSection{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .intro{
+      display: flex;
+      flex-direction: row;
+      @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 30px;
+    }
+      
+    
+      .left {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        @media only screen and (max-width: 768px) {
+          flex: 1;
+          align-items: center;
+          padding: 10px;
+          text-align: center;
+      }
+      }
+      .leftcontent{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .right {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+  
+        @media only screen and (max-width: 768px) {
+          flex: 1;
+          align-items: center;
+      }
+      
+        .astro {
+          animation: animate 1.5s infinite ease alternate;
+      
+          @keyframes animate {
+            to {
+              transform: translateY(25px);
+            }
+          }
+  
+          @media only screen and (max-width: 768px) {
+            width: 300px;
+            height: 300px;
+        }
+        }
+      }
+    }
+  }
+  
+  
+  
+  
+  

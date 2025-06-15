@@ -1,0 +1,35 @@
+@import "../../styles/config.scss";
+
+.test {
+  background-color: #0077b6;
+  .test2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-size: auto 150px;
+    background-repeat: repeat-x repeat-y;
+    background-blend-mode: multiply;
+    background-image: 
+      url("https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f94c.svg"),
+      url("https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f50d.svg");
+      
+    @include desktop{
+      background-size: auto 350px;
+    }
+
+    .tittle {
+      text-align: center;
+      font-size: 30px;
+      background-color: #0077b6;
+      border-radius: 20px;
+
+      @include desktop {
+        font-size: 70px;
+      }
+    }
+  }
+}
+
+

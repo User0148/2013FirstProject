@@ -1,0 +1,70 @@
+@import "../../styles/config.scss";
+
+
+.update {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $bg-color-secondary;
+    padding: $padding-large;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    color: $text-color-white;
+
+    @include  tablet{
+        width: 400px;
+        height: auto;
+    }
+
+    @include desktop{
+        width: 450px;
+    }
+
+
+    .updatetop{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $spacing-large;
+
+        .closebtn{
+            background-color: $bg-color-white;
+            border-radius: $border-radius-primary;
+            padding: $padding-small;
+
+        }
+    }
+    
+
+    .formcard{  
+        @include flex-column-gap($container-gap-smmal);
+
+        .error{
+            color: red;
+        }
+
+        input{
+            line-height: $line-height-large;
+        }
+
+        .validatebtn{
+        width: 150px;
+        height: 2.5rem;
+        color: $text-color-white;
+        background-color: $bg-color-primary;
+        border-radius: 12px;
+        margin-right: $spacing-medium;
+        margin: 0 auto;
+
+        }
+        .validatebtn:hover{
+            background-color: rgba($bg-color-primary, 0.638);
+            
+        }
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+}
